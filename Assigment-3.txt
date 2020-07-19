@@ -1,0 +1,8 @@
+
+1)Does anyone recognize the data type DATE?
+->Yes..Date and time are store together it requires four bytes 
+Date format is-YYYY-MM--DD
+
+
+2)Which sundivision of SQL is used to insert valves in tables?
+->using the insert command

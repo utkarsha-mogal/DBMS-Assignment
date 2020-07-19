@@ -1,0 +1,12 @@
+1) Which field of the Customers table is the primary key?
+->cnum
+
+2) What is the 4th column of the Customers table?
+->Rating
+
+3) What is another word for row? For column?
+->row-Entity,tuple
+   column-Method,Attribute
+
+4) Why isn’t it possible to see the first five rows of a table?
+->In mysql there is limit but it will not specify it is first row or column
