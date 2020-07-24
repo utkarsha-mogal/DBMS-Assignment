@@ -1,0 +1,13 @@
+Assignment-7
+1)
+select count(*) from orders where Odate='1990-10-03';
+2)
+select count(city) from customers where city is not null;
+3)
+select min(amt) from orders group by snum;
+4)
+select count(*) from orders where Odate='1990-10-03';
+5)
+select max(rating) from customers;
+6)
+Snum,count(*) from orders group by snum;
