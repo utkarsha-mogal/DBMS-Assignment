@@ -1,0 +1,16 @@
+1)
+create table cityorders select onum, amt,snum,cunu, city from orders NATURAL JOIN customers;
+
+2)
+Alter table cityorders Add Constraint onum_fk
+Foreign key(onum) references orders(onum);
+
+ Desc cityorders;
+
+Alter table copy_orders ADD
+FOREIGN key(prev) references copy_orders(onum);
+select CONSTRAINT_NAME
+from user_constraints;
+
+Alter table  <Table_name>
+Drop CONSTRAINT <CONSTRAINT_NAME>
