@@ -1,0 +1,12 @@
+1)
+Create index i_order_onum_odate on orders(onum,odate); 
+
+2)
+desc orders;
+alter table orders modify onum constarint o_pk primary key;
+
+3)
+create index I_DATE ON orders(odate);
+
+4)
+alter table customers modify rating primary key;
