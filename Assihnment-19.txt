@@ -1,0 +1,15 @@
+1)
+create View highest_rated_customers AS select *from customers where rating=(select max(rating) from customers);
+
+2)
+create view tns_city AS select city, count(city) "NO. OF SALES PEOPLE"
+from salespeople group by city;
+
+3)create view Avg_Tot_Sal AS select sname, avg(onum) Average,count(onum) "TOTAL ORDERS" from salespeople
+JOIN orders using(snum) group by sname;
+
+4)create view multiple customers AS select sname,cname from salespeople JOIN customers using (snum);
+
+
+
+
