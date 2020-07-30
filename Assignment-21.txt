@@ -1,0 +1,27 @@
+1)GRANT 
+UPDATE ON customers TO Amit ;
+
+ REVOKE
+UPDATE ON customers
+FROM Amit ;
+
+2) GRANT
+Select ON orders TO Manoj WITH GRANT OPTION;
+
+ GRANT
+Select ON Manoj.orders TO Seema;
+
+ GRANT
+UPDATE ON Manoj.orders TO Seema;
+
+3)REVOKE
+insert ON salespeople
+FROM Ajita;
+
+4)
+CREATE OR REPLACE VIEW range100 AS
+Select *from customers
+where rating BETWEEN 100 AND 500 WITH CHECK OPTION;
+
+5)CREATE OR REPLACE VIEW restrictmin AS
+select *from customers where  rating NOT IN (SELECT min(rating) from customers);
